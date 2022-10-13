@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Libre+Franklin">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./font/css/font-awesome.css">
+  <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+</head>
+<script>
+  // Defining a function to display error message
+  function printError(elemId, hintMsg) {
+      document.getElementById(elemId).innerHTML = hintMsg;
+  }
+  // validation function
+  function validateForm(){
+    var email = document.contactForm.email.value;
+    // Defining error variables with a default value
+    var emailErr = true;
+   // Validate email address
+   if(email == "") {
+        printError("emailErr", "Please enter your email address");
+    } else {
+        // Regular expression for basic email validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if(regex.test(email) === false) {
+            printError("emailErr", "Please enter a valid email address");
+        } else{
+            printError("emailErr", "");
+            emailErr = false;
+        }
+    }
+    // Prevent the form from being submitted if there are any errors
+    if((emailErr) == true){   
+      return false; 
+    }else{
+      alert(email +' '+ "is Saved!, Rate my project");
+    }
+
+  };
+</script>
+<body>
+  <main>
+    <!-- logo -->
+    <div>
+      <img src="./images/logo.svg" class="logo" alt="logo">
+    </div>
+    <!-- heading text -->
+    <div class="txt">
+      <h1>We are launching <b>soon!</b></h1>
+      <p>Subscribe and get notified</p>
+    </div>
+    <!-- input session  -->
+    <div class="inp_session">
+      <form name="contactForm" class="form" onsubmit="return validateForm()"   method="post">
+        <div class="inp">
+          <input type="email" placeholder="Your email address.."  name="email" id="email">
+          <div class="error" id="emailErr"></div>
+        </div>
+        <div>
+          <input type="submit" value="Notify Me" id="submit"> 
+        </div>  
+      </form>
+    </div>
+    <!-- dashboard image -->
+    <div class="img_dashboard">
+      <img class="dashboard"  src="./images/illustration-dashboard.png"  alt="illustration-dashboard">
+    </div>   
+  </main>
+  <footer>
+    <!-- icons -->
+    <div class="icons">
+      <i class="fa fa-facebook "></i>
+      <i class="fa fa-twitter "></i>
+      <i class="fa fa-instagram "></i>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p> &copy; Copyright Ping. All rights reserved.</p>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Anointed Kayode</a>.
+    </p>
+  </footer>
+</body>
+
+</html>

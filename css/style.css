@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Libre Franklin;
+}
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+main{
+    /* border: 1px red solid; */
+    padding: 20px;
+    margin: 0px auto;
+    min-width: 65%;
+    height: 65%;
+    text-align: center;
+}
+/* logo */
+main div .logo{
+    margin: 25px auto;
+}
+/* heading text starts */
+main .txt h1{
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Libre Franklin', serif;
+    color: var(--Gray);
+}
+main .txt h1 b{
+    font-weight: 600;
+    /* font-family: Open sans; */
+    color: black;
+}
+main .txt p{
+    font-weight: 400;
+    /* font-family: Open sans; */
+    padding: 5px;
+    padding-bottom: 20px;
+}
+/* heading text ends */
+/* input session start */
+.inp_session{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+}
+.inp_session input{
+    min-width: 400px;
+    max-width: 400px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 40px;
+    padding: 10px;
+    border: 1px solid var(--PaleBlue);
+    font-family: 'Libre Franklin', serif;
+    opacity: calc(1.0);
+    margin: 5px;
+}
+.inp_session input:active{
+    border: 1px solid var(--Gray);
+    
+}
+.inp_session #submit{
+    background-color: var(--Blue);
+    border-style: none;
+    min-width: 150px;
+    max-width: 200px;
+    border-radius: 30px;
+    height: 40px;
+    color: white;
+    box-shadow: 1px 0.7px 7px 0.7px   var(--PaleBlue);
+    font-weight: 600;
+}
+.inp_session #submit:hover{
+    opacity: calc(0.7);
+    cursor: pointer;
+}
+.inp{
+    display: block;
+}
+/* error message */
+.error{
+    color: red;
+    text-align: left;
+    padding-left: 10px;
+}
+/* input session ends */
+/* dashboard image starts */
+.img_dashboard{
+    /* border: 1px rebeccapurple solid;  */
+    max-width: 60%;
+    min-width: 600px;
+    margin: 10px auto;
+
+}
+
+main div .dashboard{
+    width: 100%;
+}
+/* dashboard image ends */
+/* icons starts */
+.icons{
+    margin: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.icons .fa{
+    color: var(--Blue);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 6px ;
+    border: 1px solid whitesmoke;
+}
+.icons .fa:hover{
+    background-color: var(--Blue);
+    color: white; 
+    margin: 10px;
+}
+/* facebook */
+.icons  .fa-facebook{
+    padding: 6px 10px;
+}
+/* instagram */
+.icons .fa-instagram{
+    padding: 6px 8px;
+}
+/* twitter */
+.icons .fa-twitter{
+    padding: 6px 7px;
+}
+/* icon ends */
+/* copyright starts */
+.copyright{
+    text-align: center;
+    color: var(--Gray);
+    font-family: 'Libre Franklin', serif;     
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+/* copyright ends */
+.attribution{
+    margin-top: px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--Gray);
+}
+.attribution a{
+    font-size: 13;
+    font-weight: 900;
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}

@@ -1,0 +1,73 @@
+@media only screen and (max-width:620px){
+    main{
+        width: 90%;
+    }
+/* logo */
+    main div .logo{
+        margin: 10px auto;
+        margin-top: 30px;
+        width: 70px;
+    }
+/* dashboard image starts */
+    .img_dashboard{
+        max-width: 90%;
+        min-width: 85%;
+
+    }
+
+    main div .dashboard{
+        width: 100%;
+    }
+/* dashboard image ends */
+/* heading text starts */
+    main .txt h1{
+        font-weight: 300;
+        font-size: 20px;
+        font-family: "Libre Franklin", Poppins, sans-serif;
+        color: var(--Gray);
+    }
+    main .txt h1 b{
+        font-weight: 600;
+        font-family: "Libre Franklin", Open sans; 
+        color: black;
+    }
+    main .txt p{
+        font-weight: 300;
+        font-size: 18px;
+        font-family: "Libre Franklin", Open sans; 
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+/* input session */
+    .inp_session {
+        display: block;
+    }
+    .form{
+        display: block;
+    }
+    .inp_session #submit{
+        min-width: 75%;
+        max-width: 85%;
+        font-family: "Libre Franklin", Poppins;
+    }
+    .inp_session input{
+        min-width: 75%;
+        max-width: 85%;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+        border: 1px solid var(--PaleBlue);
+        font-family: "Libre Franklin", Poppins;
+        opacity: calc(0.4);
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+    .error{
+        text-align: inherit;
+    }
+/* dashboard image */
+    main div .dashboard{
+        margin: 40px auto;
+        width: 100%;
+    }
+}
